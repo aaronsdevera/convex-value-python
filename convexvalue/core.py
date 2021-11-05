@@ -39,6 +39,13 @@ class CVObject:
                         return {'status':400,'message':r.text}
     
     def getFlowTableParams(self):
+        '''
+        getFlowTableParams - gets the available parameters for usage in fields and filters
+        ----------
+        PARAMS
+        ----------
+        None
+        '''
         endpoint = 'flowtableparams'
 
         params = {}
@@ -99,6 +106,13 @@ class CVObject:
         return self.utils.makeRequest(self,target_url)
 
     def getSeries(self, sym: str):
+        '''
+        getSeries - gets simple series data for a symbol
+        ----------
+        PARAMS
+        ----------
+        sym: symbol of the stock ticker, e.g. AAPl
+        '''
         endpoint = 'series'
 
         params = {
@@ -167,6 +181,7 @@ class CVObject:
         ----------
         PARAMS
         ----------
+        None
         '''
         endpoint = 'flowrep'
 
