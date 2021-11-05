@@ -1,5 +1,10 @@
 # convex-value-python
-Python API wrapper library for Convex Value API
+Python API wrapper library for [Convex Value](https://convexvalue.com/) API.
+
+Further Links:
+* [Convex Value homepage](https://convexvalue.com/)
+* [@ConvexValue on Twitter](https://twitter.com/convexvalue)
+* [JB on Twitter](https://twitter.com/jbtobar_)
 
 # Authentication
 Grab your API key from Convex Value terminal. This will be used when instantiating a `CVObject`. 
