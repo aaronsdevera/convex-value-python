@@ -1,6 +1,11 @@
 # convex-value-python
 Python API wrapper library for Convex Value API
 
+# Authentication
+Grab your API key from Convex Value terminal. This will be used when instantiating a `CVObject`. 
+
+To avoid hardcoding your token in, set it as an environment variable if you'd like: `export CV_API_KEY=<api_key>`
+
 ## Using
 ```
 # import the library
