@@ -9,5 +9,5 @@ setup(name='convexvalue',
       author_email='aaronsdevera@protonmail.com',
       url='https://github.com/aaronsdevera/convex-value-python',
       packages=['convexvalue'],
-      install_requires=['distutils', 'distutils.command','requests','urllib','urllib.parse'],
+      install_requires=['requests','urllib','urllib.parse'],
      )
