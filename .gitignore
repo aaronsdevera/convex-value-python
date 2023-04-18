@@ -1,2 +1,4 @@
 dev/
 .secrets/
+__pycache__
+convexvalue.egg-info

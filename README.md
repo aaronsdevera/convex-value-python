@@ -7,17 +7,21 @@ Further Links:
 * [JB on Twitter](https://twitter.com/jbtobar_)
 
 # Authentication
-Grab your API key from Convex Value terminal. This will be used when instantiating a `CVObject`. 
+Use environment variables for your ConvexValue credentials. This will be used when instantiating a `ConvexValue`. 
 
-To avoid hardcoding your token in, set it as an environment variable if you'd like: `export CV_API_KEY=<api_key>`
+Avoid hardcoding your credentials, set them as environment variables:
+```
+export CONVEX_VALUE_EMAIL=<email>
+export CONVEX_VALUE_PASSWORD=<password>
+```
 
 ## Using
 ```
 # import the library
-from convexvalue.core import CVObject
+from convexvalue import ConvexValue
 
 # instantiate a CV Object
-cvx = CVObject('<you_api_key_here')
+cvx = ConvexValue()
 
 # print out the flow rep for Cloudflare (NET)
 print(cvx.getFlowRep('NET'))
