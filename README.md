@@ -38,3 +38,39 @@ print(cvx.getFlowRep('NET'))
 | activeOptionsQuery | gets the options database result | `CVObject.activeOptionsQuery(lim: int, filters: str, dir: str, orderby: str)` | `lim`: limit of data, e.g. 100 <br> `filters`: query filters, e.g. volm>100,delta<0.05,delta>0.05 <br> `dir`: direction, e.g. desc <br> `orderby`: field to order by, e.g. dayVolume
 | getFlowTable | gets the options flow table | `CVObject.getFlowTable(lim: int, fields: str, cat: str, list: str, page: int, minprem: int, maxprem: int)` | `lim`: limit of data, e.g. 100  <br> `fields`: fields to bring into chart, e.g. value,price,volatility <br> `cat`: direction, e.g. ALL <br> `list`: field to order by, e.g. ALL <br> `page`: pagination marker, e.g. 1  <br> `minprem`: minium premium filter, e.g. 0 <br> `maxprem`: maximum premium filter, e.g. 0
 | getFlowRep | gets the options flow rep | `CVObject.getFlowRep()`| None
+
+## SQL Table list
+Here are the tables available to be queried with SQL.
+
+```
+schema,name,type
+public,daylist,materialized view
+public,futrootdir,table
+public,opt_dir,table
+public,opt_full,materialized view
+public,opt_full_view,view
+public,opt_greeks,table
+public,opt_oich,materialized view
+public,opt_profile,table
+public,opt_quote,table
+public,opt_summary,table,
+public,opt_tas,table
+public,opt_trade,table
+public,opth,table
+public,opth_exps,materialized view
+public,tas,table
+public,tash,table
+public,trm,table
+public,trmh,table
+public,und_dir,table
+public,und_flow,table
+public,und_full,materialized view
+public,und_full_view,view
+public,und_profile,table
+public,und_quote,table
+public,und_summary,table
+public,und_tas,table
+public,und_trade,table
+public,und_underlying,table
+public,undh,table
+```
