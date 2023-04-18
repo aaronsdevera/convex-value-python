@@ -11,6 +11,7 @@ class ConvexValueResponse():
     method = None
     cookies = None
     DATA = None
+    text = None
 
     def __init__(self, request, response):
         self.request = request
@@ -19,6 +20,7 @@ class ConvexValueResponse():
         self.method = self.request['method']
         self.cookies = self.response.cookies
         self.DATA = self.response.text
+        self.text = self.DATA
     
     def data(self):
         return json.loads(self.DATA)
